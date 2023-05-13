@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #2E294E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid red; */
+    position: relative;
+
+}
+
+.outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-left: 5px solid rosybrown;
+    border-right: 5px solid rosybrown;
+    border-bottom: 5px solid transparent; 
+    border-top: 5px solid transparent; 
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+
+.middle{
+    position: absolute;
+    top: 30px;
+    left:30px;
+    right: 30px;
+    bottom:30px;
+    border-left: 5px solid rgb(214, 0, 193);
+    border-right: 5px solid rgb(214, 0, 193);
+    border-bottom: 5px solid transparent; 
+    border-top: 5px solid transparent; 
+    border-radius: 50%;
+    animation: rotate 1s linear infinite reverse;
+}
+
+.inner{
+    position: absolute;
+    top: 60px;
+    left:60px;
+    right: 60px;
+    bottom:60px;
+    border-left: 5px solid rgb(4, 117, 81);
+    border-right: 5px solid rgb(4, 117, 81);
+    border-bottom: 5px solid transparent; 
+    border-top: 5px solid transparent; 
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+.dot{
+    position: absolute;
+    top: 90px;
+    left:90px;
+    right: 90px;
+    bottom:90px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
